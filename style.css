@@ -1,0 +1,46 @@
+*,html,body
+{
+        margin: 0;
+    padding: 0;
+}
+
+header
+{
+    background-color: paleturquoise;
+    height: 100px
+}
+
+ul
+{
+    list-style: none;
+}
+
+ul li
+{
+    display: inline-block;
+}
+
+header nav
+{
+    float: left;
+}
+
+.logo img
+{
+    margin-top: 15px;
+    float: right;
+}
+
+header nav ul li a
+{
+    padding-right: 30px;
+    font-weight: bold;
+    color: cadetblue;
+    transition: all 0.5s;
+}
+
+header nav ul li a:hover
+{
+    text-decoration: none;
+    color: dodgerblue;
+}
