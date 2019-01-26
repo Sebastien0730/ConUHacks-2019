@@ -22,9 +22,9 @@
 	</head>
 
 	<body class="background">
-		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-		<form action="Weight.html">
+		<form>
 			<center><label class="heightpage">
 					Enter your height:
 				</label>
@@ -34,6 +34,32 @@
 			<br><br>
 			<span class="u"><button name="height" type="submit" value="Enter">Enter</button></span>
 		</form>
+		<form>
+			<center><label class=" heightpage">
+					Enter your weight:
+				</label>
+				<br>
+				<input id="weight" class="textboxid" type="text" name="weight">
+				<span class="units">Kg</span></center>
+			<br><br>
+			<span class="u"><button name="weight" type="submit" value="Enter">Enter</button></span>
+		</form>
+
+		<p id="bmiOutput"></p>
+
+
+		<script>
+
+			function calculateBmi() {
+				var heightInput = document.getElementById("height").value;
+				var weightInput = document.getElementById("weight").value;
+
+				var bmi = weightInput / (heightInput * heightInput);
+				return bmi;
+			}
+			document.getElementById("bmiOutput").innerHTML = calculateBmi();
+
+		</script>
 
 	</body>
 
