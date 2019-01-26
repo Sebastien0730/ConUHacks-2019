@@ -1,10 +1,8 @@
-var weightInput = 10;
-var heightInput = 10;
-function storeW() {
-    weightInput = document.getElementById("weight").value;
-}
-function storeH() {
-    heightInput = document.getElementById("height").value;
+function calculateBmi() {
+    var weightInput = document.getElementById("weight").value;
+    var heightInput = document.getElementById("height").value;
+    var bmi = weightInput/(heightInput*heightInput);
 }
 
-document.getElementById("bmiOutput").innerHTML = weightInput / (heightInput * heightInput);
+x = calculateBmi.bmi();
+document.getElementById("bmiOutput").innerHTML = x;
