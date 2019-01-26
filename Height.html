@@ -2,9 +2,7 @@
 	<html lang="en">
 
 	<head>
-		<script type="script de david.js">
-
-	</script>
+		<script type="text/JavaScript" src="script.js"></script>
 		<title>Team Lunchtime</title>
 
 
@@ -22,45 +20,23 @@
 	</head>
 
 	<body class="background">
-		<br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-		<form>
-			<center><label class="heightpage">
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<center>
+			<form>
+				<label class="heightpage">
 					Enter your height:
 				</label>
 				<br>
-				<input class="textboxid" type="text" name="height" id="height">
-				<span class="units">m</span></center>
-			<br><br>
-			<span class="u"><button name="height" type="submit" value="Enter">Enter</button></span>
-		</form>
-		<form>
-			<center><label class=" heightpage">
-					Enter your weight:
-				</label>
-				<br>
-				<input id="weight" class="textboxid" type="text" name="weight">
-				<span class="units">Kg</span></center>
-			<br><br>
-			<span class="u"><button name="weight" type="submit" value="Enter">Enter</button></span>
-		</form>
+				<input id="textboxid" type="text" name="height">
+				<span class="units">m</span>
 
-		<p id="bmiOutput"></p>
-
-
-		<script>
-
-			function calculateBmi() {
-				var heightInput = document.getElementById("height").value;
-				var weightInput = document.getElementById("weight").value;
-
-				var bmi = weightInput / (heightInput * heightInput);
-				return bmi;
-			}
-			document.getElementById("bmiOutput").innerHTML = calculateBmi();
-
-		</script>
-
+				<button name="height" type="submit" value="Enter"></button>
+			</form>
+		</center>
 	</body>
 
 	</html>
+
+	<h1>
+
+	</h1>
