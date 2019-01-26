@@ -15,8 +15,9 @@
     font-family: 'Trebuchet MS';
     font-size: 88px;
     color: aliceblue;
+    text-shadow: 1px 1px 8px red;
 }
-#textboxid
+.textboxid
 {
     background: rgba(0, 0, 0, 0.01);
     width: 100px;
@@ -32,3 +33,29 @@
     margin-left: 10px;
 }
 
+button {
+    position: absolute;
+    left: 44%;
+    border: hidden;
+    cursor:pointer;
+    height:  38px;
+    line-height:  40px;
+    background: grey;
+    text-align:  center;
+    width:  140px;
+    color:  aliceblue;
+                 }
+button:hover  {
+         color:  black;
+         background:  aliceblue;
+                 }
+
+.u{
+    color: aliceblue;
+    font-size:  24px;
+    font-family: 'Trebuchet MS'; 
+     
+}
+.u:hover{
+     color:  black;
+}
