@@ -2,9 +2,7 @@
 	<html lang="en">
 
 	<head>
-		<script type="script de david.js">
 
-	</script>
 		<title>Team Lunchtime</title>
 
 
@@ -22,6 +20,7 @@
 	</head>
 
 	<body class="background">
+
 		<br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 		<form>
@@ -29,38 +28,39 @@
 					Enter your height:
 				</label>
 				<br>
-				<input class="textboxid" type="text" name="height" id="height">
+				<input class="textboxid" type="text" id="height">
 				<span class="units">m</span></center>
-			<br><br>
-			<span class="u"><button name="height" type="submit" value="Enter">Enter</button></span>
+			<br>
+			<span class="u">
+				<div class="button" onclick="storeH()">Enter</div>
+			</span>
 		</form>
 		<form>
 			<center><label class=" heightpage">
 					Enter your weight:
 				</label>
 				<br>
-				<input id="weight" class="textboxid" type="text" name="weight">
+				<input id="weight" class="textboxid" type="text">
 				<span class="units">Kg</span></center>
-			<br><br>
-			<span class="u"><button name="weight" type="submit" value="Enter">Enter</button></span>
+			<br>
+			<span class="u">
+				<div class="button" onclick="storeW()">Enter</button>
+			</span>
 		</form>
 
 		<p id="bmiOutput"></p>
 
-
 		<script>
-
-			function calculateBmi() {
-				var heightInput = document.getElementById("height").value;
-				var weightInput = document.getElementById("weight").value;
-
-				var bmi = weightInput / (heightInput * heightInput);
-				return bmi;
+			var weightInput = 10;
+			var heightInput = 10;
+			function storeW() {
+				weightInput = document.getElementById("weight").value;
 			}
-			document.getElementById("bmiOutput").innerHTML = calculateBmi();
-
+			function storeH() {
+				heightInput = document.getElementById("height").value;
+			}
+			document.getElementById("bmiOutput").innerHTML = weightInput / (heightInput * heightInput);
 		</script>
-
 	</body>
 
 	</html>
