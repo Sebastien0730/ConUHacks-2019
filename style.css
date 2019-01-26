@@ -15,8 +15,9 @@
     font-family: 'Trebuchet MS';
     font-size: 88px;
     color: aliceblue;
+    text-shadow: 1px 1px 8px red;
 }
-#textboxid
+.textboxid
 {
     background: rgba(0, 0, 0, 0.01);
     width: 100px;
@@ -42,7 +43,6 @@ button {
     background: grey;
     text-align:  center;
     width:  140px;
-    
     color:  aliceblue;
                  }
 button:hover  {
