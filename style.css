@@ -112,3 +112,15 @@
          color:  black;
          background:  aliceblue;
                  }
+
+.bodyChoice {
+    background: url("https://www.fg-a.com/wallpapers/black-background-geometric-shapes.jpg");
+}
+
+.whiten {
+    color:white;
+}
+
+tableContent {
+    border:1px white;
+}
