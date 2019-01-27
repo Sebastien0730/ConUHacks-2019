@@ -15,10 +15,11 @@
 	</head>
 
 	<body class="background" onload="hide();">
+		<div class="author">
+			By Sébastien Blain-Nadeau<br>David Thai<br>Kevin Jiang
+		</div>
 
-
-
-		<div id="heightSelec">
+		<div <div id="heightSelec">
 
 			<center><label class="heightpage">
 					Enter your height:
@@ -43,7 +44,14 @@
 
 			<input type="submit" class="button" value="Enter" onclick="storeW();">
 
+		</div>
 
+		<div id="bmi">
+			<center>
+				<p class="bmiOutput">Your bmi is: <span id="output"></span></p>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<input type="submit" class="button" value="Enter" onclick="typeDisplay();">
+			</center>
 		</div>
 
 		<div id="type">
@@ -138,9 +146,26 @@
 			<div id="back" onclick="back();">
 				<center>BACK</center>
 			</div>
+
+			<div class="muscleTitle">Drag your exercises into the program on the right</div>
 			<div id="input1" ondrop="drop(event)" ondragover="allowDrop(event)">
 				<div id="chest1" draggable="true" ondragstart="drag(event)">
 					<center>Barbell Benchpress</center>
+				</div>
+			</div><br>
+			<div id="input2" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div id="chest2" draggable="true" ondragstart="drag(event)">
+					<center>Dumbbell Press</center>
+				</div>
+			</div><br>
+			<div id="input3" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div id="chest3" draggable="true" ondragstart="drag(event)">
+					<center>Cable Crossovers</center>
+				</div>
+			</div><br>
+			<div id="input4" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div id="chest4" draggable="true" ondragstart="drag(event)">
+					<center>Dumbbell Flies</center>
 				</div>
 			</div>
 
