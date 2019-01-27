@@ -7,22 +7,28 @@
 
 		<link href="style.css" rel="stylesheet" type="text/css">
 
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="script de david.js"></script>
 
-		<!-- jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-		<!-- Latest compiled JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 	</head>
 
-	<body class="background">
+	<body onload="hide();" id="openScreen">
+		<center>
+			<h1 class="openTitle">Welcome to "Lunchtime" <br>Fitness<br> program</h1>
 
-		<br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<input type="submit" class="start" value="Start" onclick="start();">
+		</center>
 
-		<form>
+	</body>
+
+	<body class="background" id="start">
+
+		<div id="line">
+
+		</div>
+
+		<div id="heightSelec">
+
 			<center><label class="heightpage">
 					Enter your height:
 				</label>
@@ -30,11 +36,14 @@
 				<input class="textboxid" type="text" id="height">
 				<span class="units">m</span></center>
 			<br>
-			<span class="u">
-				<div class="button" onclick="storeH()">Enter</div>
-			</span>
-		</form>
-		<form>
+			<div class="u">
+				<input type="submit" class="button" value="Enter" onclick="storeH();"> </div>
+
+
+		</div>
+
+		<div id="weightSelec">
+
 			<center><label class=" heightpage">
 					Enter your weight:
 				</label>
@@ -42,24 +51,23 @@
 				<input id="weight" class="textboxid" type="text">
 				<span class="units">Kg</span></center>
 			<br>
-			<span class="u">
-				<div class="button" onclick="storeW()">Enter</button>
-			</span>
-		</form>
+			<div class="u">
+				<input type="submit" class="button" value="Enter" onclick="storeW();">
+			</div>
 
-		<p id="bmiOutput">Bmi </p>
+		</div>
 
-		<script>
-			var weightInput = 10;
-			var heightInput = 10;
-			function storeW() {
-				weightInput = document.getElementById("weight").value;
-			}
-			function storeH() {
-				heightInput = document.getElementById("height").value;
-			}
-			document.getElementById("bmiOutput").innerHTML = weightInput / (heightInput * heightInput);
-		</script>
+
+
+
+		<div id="type">
+
+			<h1>Type of workouts</h1>
+
+
+		</div>
+
+
+
+
 	</body>
-
-	</h1>

@@ -60,3 +60,55 @@
 .u:hover{
      color:  black;
 }
+
+#heightSelec{
+    transform: translateY(220px);
+}
+
+#weightSelec{
+    transform:  translateY(220px);
+}
+
+#line{
+    height: 100%;
+    border: 5px solid aliceblue;
+    position: absolute;
+    right: 30%;
+}
+#openScreen{
+    background-image: url("http://www.wsllpaper.com/wp-content/uploads/2013/07/Mountain-Dark-Nature-HD-Wallpaper.jpg");
+    width: 98%;
+    height: 97%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.openTitle{
+    transform: translateY(100px);
+
+    color: black;
+    font-family: 'Trebuchet MS';
+    font-size: 88px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 10px black;
+    
+}
+.start {
+    
+    position: absolute;
+    left: 44%;
+    border: hidden;
+    cursor:pointer;
+    height:  38px;
+    line-height:  40px;
+    background: grey;
+    text-align:  center;
+    width:  140px;
+    color:  aliceblue;
+                 }
+.start:hover  {
+         color:  black;
+         background:  aliceblue;
+                 }
