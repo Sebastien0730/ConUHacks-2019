@@ -52,8 +52,35 @@ function storeW() {
 
 }
 
-function showMuscle() {
-    var bodyParts = document.getElementById("bodyParts");
+function cardio() {
+    var cardio = document.getElementById("cardio");
+    var type = document.getElementById("type");
+    var line = document.getElementById("line");
+    type.style.display = "none";
     line.style.display = "block";
-    bodyParts.style.display = "block";
+    cardio.style.display = "block";
+}
+function endurance() {
+    var endurance = document.getElementById("endurance");
+    var type = document.getElementById("type");
+    var line = document.getElementById("line");
+    type.style.display = "none";
+    line.style.display = "block";
+    endurance.style.display = "block";
+}
+function hypertrophy() {
+    var hypertrophy = document.getElementById("hypertrophy");
+    var type = document.getElementById("type");
+    var line = document.getElementById("line");
+    type.style.display = "none";
+    line.style.display = "block";
+    hypertrophy.style.display = "block";
+}
+function strength() {
+    var strength = document.getElementById("strength");
+    var type = document.getElementById("type");
+    var line = document.getElementById("line");
+    type.style.display = "none";
+    line.style.display = "block";
+    strength.style.display = "block";
 }
