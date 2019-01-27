@@ -9,7 +9,7 @@ var endurance = document.getElementById("endurance");
 var hypertrophy = document.getElementById("hypertrophy");
 var strength = document.getElementById("strength");
 var slots = document.getElementById("slots");
-
+var chest = document.getElementById("chest");
 
 function hide() {
     var heightSelec = document.getElementById("heightSelec");
@@ -20,6 +20,7 @@ function hide() {
     var hypertrophy = document.getElementById("hypertrophy");
     var strength = document.getElementById("strength");
     var slots = document.getElementById("slots");
+    var chest = document.getElementById("chest");
 
     weightSelec.style.display = "none";
     type.style.display = "none";
@@ -28,6 +29,7 @@ function hide() {
     hypertrophy.style.display = "none";
     strength.style.display = "none";
     slots.style.display = "none";
+    chest.style.display = "none";
 }
 
 

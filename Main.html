@@ -60,20 +60,26 @@
 
 		</div>
 
-
 		<div id="slots">
-			<div class="basket">Program:</div>
-			<div id="slot1"></div>
-
-		</div>
-
+			<div style="position: absolute; border: 5px solid white; height:100%; right:500px"></div>
+			<div class="basket">Your program:</div>
+			<div id="slot1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div id="slot2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div id="slot3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div id="slot4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div id="slot5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div id="slot6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div id="slot7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div id="finish">
+				<center>DONE</center>
+			</div>
+		</div>>
 		<div id="cardio">
 			<div style="position: absolute; border: 5px solid white; height:100%; right:30%"></div>
 
 		</div>
 
 		<div id="endurance">
-			<div style="position: absolute; border: 5px solid white; height:100%; right:30%"></div>
 			<h1 class="whiten" style="padding-left:100px; padding-top: 30px; font-size: 48px"> Choose the body part you would
 				like to train:</h1>
 			<br><br><br><br><br><br>
@@ -93,7 +99,6 @@
 		</div>
 
 		<div id="hypertrophy">
-			<div style="position: absolute; border: 5px solid white; height:100%; right:30%"></div>
 			<h1 class="whiten" style="padding-left:100px; padding-top: 30px; font-size: 48px"> Choose the body part you would
 				like to train:</h1>
 			<br><br><br><br><br><br>
@@ -112,7 +117,6 @@
 		</div>
 
 		<div id="strength">
-			<div style="position: absolute; border: 5px solid white; height:100%; right:30%"></div>
 			<h1 class="whiten" style="padding-left:100px; padding-top: 30px; font-size: 48px"> Choose the body part you would
 				like to train:</h1>
 			<br><br><br><br><br><br>
@@ -130,6 +134,17 @@
 			</div>
 		</div>
 
+		<div id="chest">
+			<div id="back" onclick="back();">
+				<center>BACK</center>
+			</div>
+			<div id="input1" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div id="chest1" draggable="true" ondragstart="drag(event)">
+					<center>Barbell Benchpress</center>
+				</div>
+			</div>
+
+		</div>
 
 
 		<script src="script.js"></script>
