@@ -18,8 +18,8 @@ function endurance() {
     endurance.style.display = "block";
     slots.style.display = "block";
     state = "endurance";
-
 }
+
 function hypertrophy() {
     var hypertrophy = document.getElementById("hypertrophy");
     var type = document.getElementById("type");
