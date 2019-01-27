@@ -7,39 +7,25 @@
 
 		<link href="style.css" rel="stylesheet" type="text/css">
 
-		<script src="script de david.js"></script>
-
+		<script src="script.js"></script>
 
 	</head>
 
-	<body onload="hide();" id="openScreen">
-		<center>
-			<h1 class="openTitle">Welcome to "Lunchtime" <br>Fitness<br> program</h1>
+	<body class="background" onload="hide();">
 
-			<input type="submit" class="start" value="Start" onclick="start();">
-		</center>
-
-	</body>
-
-	<body class="background" id="start">
-
-		<div id="line">
-
-		</div>
+		<div id="line"></div>
 
 		<div id="heightSelec">
 
 			<center><label class="heightpage">
 					Enter your height:
 				</label>
-				<br>
+				<br><br>
 				<input class="textboxid" type="text" id="height">
 				<span class="units">m</span></center>
-			<br>
-			<div class="u">
-				<input type="submit" class="button" value="Enter" onclick="storeH();"> </div>
+			<br><br>
 
-
+			<input type="submit" class="button" value="Enter" onclick="storeH();">
 		</div>
 
 		<div id="weightSelec">
@@ -47,13 +33,13 @@
 			<center><label class=" heightpage">
 					Enter your weight:
 				</label>
-				<br>
+				<br><br>
 				<input id="weight" class="textboxid" type="text">
 				<span class="units">Kg</span></center>
-			<br>
-			<div class="u">
-				<input type="submit" class="button" value="Enter" onclick="storeW();">
-			</div>
+			<br><br>
+
+			<input type="submit" class="button" value="Enter" onclick="storeW();">
+
 
 		</div>
 
