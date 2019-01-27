@@ -1,5 +1,4 @@
 var state;
-var muscle;
 function cardio() {
     var cardio = document.getElementById("cardio");
     var type = document.getElementById("type");
@@ -39,28 +38,11 @@ function strength() {
     state = "strength";
 }
 
-function chest() {
-    var back = document.getElementById(state);
-    var chest = document.getElementById("chest");
-    back.style.display = "none";
-    chest.style.display = "block";
-    muscle = "chest";
-
-}
-function backMus() {
-    var back = document.getElementById(state);
-    var chest = document.getElementById("back");
-    back.style.display = "none";
-    chest.style.display = "block";
-    muscle = "back";
+function getState() {
+    return state;
 }
 
 
-function back() {
-    var mus = document.getElementById(muscle);
-    var back = document.getElementById(state);
-    mus.style.display = "none";
-    back.style.display = "block";
 
 
-}
+

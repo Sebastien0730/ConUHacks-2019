@@ -4,12 +4,12 @@
 	<head>
 		<title>Team Lunchtime</title>
 
-
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" type="text/css" href="style2.css">
 		<script src="script.js"></script>
 		<script src="muscles.js"></script>
 		<script src="dragDrop.js"></script>
+		<script src="body.js"></script>
 
 
 	</head>
@@ -19,7 +19,7 @@
 			By Sébastien Blain-Nadeau<br>David Thai<br>Kevin Jiang
 		</div>
 
-		<div <div id="heightSelec">
+		<div id="heightSelec">
 
 			<center><label class="heightpage">
 					Enter your height:
@@ -60,7 +60,7 @@
 				<center>What would you like to focus your training on?</center>
 			</h1>
 			<div class="grid-container">
-				<div id="grid1" class="grid-item" onclick="cardio1();">Cardio</div>
+				<div id="grid1" class="grid-item" onclick="cardio();">Cardio</div>
 				<div id="grid2" class="grid-item" onclick="endurance();">Endurance</div>
 				<div id="grid3" class="grid-item" onclick="hypertrophy();">Hypertrophy</div>
 				<div id="grid4" class="grid-item" onclick="strength();">Strength</div>
@@ -78,14 +78,35 @@
 			<div id="slot5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 			<div id="slot6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 			<div id="slot7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-			<div id="finish">
+			<div id="finish" onclick="end();">
 				<center>DONE</center>
 			</div>
-		</div>>
-		<div id="cardio">
-			<div style="position: absolute; border: 5px solid white; height:100%; right:30%"></div>
-
 		</div>
+
+		<div id="cardio">
+			<div class="muscleTitle">Drag your exercises into the program on the right</div>
+			<div id="input1" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div id="cardio1" draggable="true" ondragstart="drag(event)">
+					<center>Speed Walking</center>
+				</div>
+			</div><br>
+			<div id="input2" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div id="cardio2" draggable="true" ondragstart="drag(event)">
+					<center>Catching the bus</center>
+				</div>
+			</div><br>
+			<div id="input3" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div id="cardio3" draggable="true" ondragstart="drag(event)">
+					<center>Going up the stairs</center>
+				</div>
+			</div><br>
+			<div id="input4" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div id="cardio4" draggable="true" ondragstart="drag(event)">
+					<center>Walking my dog</center>
+				</div>
+			</div>
+		</div>
+
 
 		<div id="endurance">
 			<h1 class="whiten" style="padding-left:100px; padding-top: 30px; font-size: 48px"> Choose the body part you would
@@ -94,7 +115,7 @@
 
 			<div class="muscleGrid">
 				<div id="muscle1" class="muscleItem" onclick="chest()">Chest</div>
-				<div id="muscle2" class="muscleItem" onclick="back()">Back</div>
+				<div id="muscle2" class="muscleItem" onclick="backMus()">Back</div>
 				<div id="muscle3" class="muscleItem" onclick="deltoid()">Deltoid</div>
 				<div id="muscle4" class="muscleItem" onclick="biceps()">Biceps</div>
 				<div id="muscle5" class="muscleItem" onclick="triceps()">Triceps</div>
@@ -113,7 +134,7 @@
 
 			<div class="muscleGrid">
 				<div id="muscle1" class="muscleItem" onclick="chest()">Chest</div>
-				<div id="muscle2" class="muscleItem" onclick="back()">Back</div>
+				<div id="muscle2" class="muscleItem" onclick="backMus()">Back</div>
 				<div id="muscle3" class="muscleItem" onclick="deltoid()">Deltoid</div>
 				<div id="muscle4" class="muscleItem" onclick="biceps()">Biceps</div>
 				<div id="muscle5" class="muscleItem" onclick="triceps()">Triceps</div>
@@ -131,7 +152,7 @@
 
 			<div class="muscleGrid">
 				<div id="muscle1" class="muscleItem" onclick="chest()">Chest</div>
-				<div id="muscle2" class="muscleItem" onclick="back()">Back</div>
+				<div id="muscle2" class="muscleItem" onclick="backMus()">Back</div>
 				<div id="muscle3" class="muscleItem" onclick="deltoid()">Deltoid</div>
 				<div id="muscle4" class="muscleItem" onclick="biceps()">Biceps</div>
 				<div id="muscle5" class="muscleItem" onclick="triceps()">Triceps</div>
@@ -171,9 +192,72 @@
 
 		</div>
 
+		<div id="biceps">
+			<div id="back" onclick="back();">
+				<center>BACK</center>
+			</div>
 
-		<script src="script.js"></script>
-		<script src="muscles.js"></script>
+			<div class="muscleTitle">Drag your exercises into the program on the right</div>
+			<div id="input1" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div id="bicep1" draggable="true" ondragstart="drag(event)">
+					<center>Barbell Curl</center>
+				</div>
+			</div><br>
+			<div id="input2" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div id="bicep2" draggable="true" ondragstart="drag(event)">
+					<center>Dumbbell Curl</center>
+				</div>
+			</div><br>
+			<div id="input3" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div id="bicep3" draggable="true" ondragstart="drag(event)">
+					<center>Incline Ez Barbell Curl</center>
+				</div>
+			</div><br>
+			<div id="input4" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div id="bicep4" draggable="true" ondragstart="drag(event)">
+					<center>Concentrated Barbell Curl</center>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="backMus">
+			<div id="back" onclick="back();">
+				<center>BACK</center>
+			</div>
+
+			<div class="muscleTitle">Drag your exercises into the program on the right</div>
+			<div id="input1" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div id="back1" draggable="true" ondragstart="drag(event)">
+					<center>Pullups</center>
+				</div>
+			</div><br>
+			<div id="input2" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div id="back2" draggable="true" ondragstart="drag(event)">
+					<center>Lat Pulldowns</center>
+				</div>
+			</div><br>
+			<div id="input3" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div id="back3" draggable="true" ondragstart="drag(event)">
+					<center>Cable Rows</center>
+				</div>
+			</div><br>
+			<div id="input4" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div id="back4" draggable="true" ondragstart="drag(event)">
+					<center>Barbell Deadlifts</center>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="end">
+
+
+
+
+		</div>
+
+
 
 
 	</body>

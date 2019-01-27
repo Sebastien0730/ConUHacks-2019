@@ -13,7 +13,6 @@ function drop(ev) {
 }
 
 function hide() {
-    var heightSelec = document.getElementById("heightSelec");
     var weightSelec = document.getElementById("weightSelec");
     var bmi = document.getElementById("bmi");
     var type = document.getElementById("type");
@@ -23,6 +22,10 @@ function hide() {
     var strength = document.getElementById("strength");
     var slots = document.getElementById("slots");
     var chest = document.getElementById("chest");
+    var backMus = document.getElementById("backMus");
+    var biceps = document.getElementById("biceps");
+
+    var end = document.getElementById("end");
 
     weightSelec.style.display = "none";
     bmi.style.display = "none";
@@ -33,4 +36,7 @@ function hide() {
     strength.style.display = "none";
     slots.style.display = "none";
     chest.style.display = "none";
+    backMus.style.display = "none";
+    biceps.style.display = "none";
+    end.style.display = "none";
 }
