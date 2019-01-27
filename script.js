@@ -24,7 +24,6 @@ function hide() {
 }
 
 
-
 function storeH() {
     var heightSelec = document.getElementById("heightSelec");
     var weightSelec = document.getElementById("weightSelec");
