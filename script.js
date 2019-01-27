@@ -1,37 +1,5 @@
 var weightInput;
 var heightInput;
-var start = document.getElementById("start");
-var heightSelec = document.getElementById("heightSelec");
-var weightSelec = document.getElementById("weightSelec");
-var type = document.getElementById("type");
-var cardio = document.getElementById("cardio");
-var endurance = document.getElementById("endurance");
-var hypertrophy = document.getElementById("hypertrophy");
-var strength = document.getElementById("strength");
-var slots = document.getElementById("slots");
-var chest = document.getElementById("chest");
-
-function hide() {
-    var heightSelec = document.getElementById("heightSelec");
-    var weightSelec = document.getElementById("weightSelec");
-    var type = document.getElementById("type");
-    var cardio = document.getElementById("cardio");
-    var endurance = document.getElementById("endurance");
-    var hypertrophy = document.getElementById("hypertrophy");
-    var strength = document.getElementById("strength");
-    var slots = document.getElementById("slots");
-    var chest = document.getElementById("chest");
-
-    weightSelec.style.display = "none";
-    type.style.display = "none";
-    cardio.style.display = "none";
-    endurance.style.display = "none";
-    hypertrophy.style.display = "none";
-    strength.style.display = "none";
-    slots.style.display = "none";
-    chest.style.display = "none";
-}
-
 
 function storeH() {
     var heightSelec = document.getElementById("heightSelec");
@@ -47,16 +15,21 @@ function storeH() {
 function storeW() {
 
     var weightSelec = document.getElementById("weightSelec");
-    var type = document.getElementById("type");
+    var bmi = document.getElementById("bmi");
 
-    // weightInput = document.getElementById("weight").value;
+    weightInput = document.getElementById("weight").value;
 
     // Output of bmi
-    //document.getElementById("output").innerHTML = weightInput / (heightInput * heightInput);
 
     weightSelec.style.display = "none";
-    type.style.display = "block";
-
-
+    bmi.style.display = "block";
+    document.getElementById("output").innerHTML = weightInput / (heightInput * heightInput);
 }
 
+function typeDisplay() {
+    var bmi = document.getElementById("bmi");
+    var type = document.getElementById("type");
+
+    bmi.style.display = "none";
+    type.style.display = "block";
+}
