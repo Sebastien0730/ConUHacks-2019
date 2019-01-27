@@ -12,17 +12,26 @@
 
 
 <body>
-    <div style="position: absolute; border: 5px solid white; height:100%; right:30%"></div>
-    <div id="slots">
-        <div class="basket">Your program:</div>
-        <div id="slot1"></div>
-        <div id="slot2"></div>
-        <div id="slot3"></div>
-        <div id="slot4"></div>
-        <div id="slot5"></div>
-        <div id="slot6"></div>
-        <div id="slot7"></div>
+    <div style="position: absolute; border: 5px solid white; height:100%; right:500px"></div>
+    <div class="basket">Your program:</div>
+    <div id="slot1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="slot2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="slot3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="slot4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="slot5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="slot6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="slot7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="finish">
+        <center>DONE</center>
     </div>
+    <div id="input1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div id="chest1" draggable="true" ondragstart="drag(event)">
+            <center>Barbell Benchpress</center>
+        </div>
+    </div>
+
+
+
 
 
 </body>
