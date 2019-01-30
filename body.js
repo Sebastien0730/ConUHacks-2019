@@ -36,9 +36,10 @@ function end() {
     var back = document.getElementById(muscle);
     var end = document.getElementById("end");
     var slots = document.getElementById("slots");
+    var bar = document.getElementById("lol");
     back.style.display = "none";
     end.style.display = "block";
     slots.style.display = "block";
     slots.style.transform = "translateX(-600px)";
-
+    bar.style.display = "none";
 }

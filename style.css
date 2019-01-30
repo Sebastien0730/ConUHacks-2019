@@ -351,51 +351,56 @@
      width: 470px;
     height: 75px;
     border: 1px solid #aaaaaa;
+    
 }
 
 #chest2{
     width: 470px;
     height: 75px;
-    border: 1px solid #aaaaaa;
     font-size: 34px;
     color: aliceblue;
+    text-align: justify;
+    padding-top: 17px;
 }
 
 #chest3{
     width: 470px;
     height: 75px;
-    border: 1px solid #aaaaaa;
     font-size: 34px;
     color: aliceblue;
+    padding-top: 17px;
 }
 
 #chest4{
     width: 470px;
     height: 75px;
-    border: 1px solid #aaaaaa;
     font-size: 34px;
     color: aliceblue;
+        padding-top: 17px;
+
 }
 
 #chest1{
     width: 470px;
     height: 75px;
-    border: 1px solid #aaaaaa;
     font-size: 34px;
     color: aliceblue;
+        padding-top: 17px;
+
 }
 #back1{
     width: 470px;
     height: 75px;
-    border: 1px solid #aaaaaa;
     font-size: 34px;
     color: aliceblue;
+        padding-top: 17px;
+
 }
 
 #back2{
     width: 470px;
     height: 75px;
-    border: 1px solid #aaaaaa;
+    padding-top: 17px;
     font-size: 34px;
     color: aliceblue;
 }
@@ -403,7 +408,7 @@
 #back3{
     width: 470px;
     height: 75px;
-    border: 1px solid #aaaaaa;
+    padding-top: 17px;
     font-size: 34px;
     color: aliceblue;
 }
@@ -411,7 +416,7 @@
 #back4{
     width: 470px;
     height: 75px;
-    border: 1px solid #aaaaaa;
+    padding-top: 17px;
     font-size: 34px;
     color: aliceblue;
 }
@@ -451,7 +456,7 @@
 #bicep1{
     width: 470px;
     height: 75px;
-    border: 1px solid #aaaaaa;
+    padding-top: 17px;
     font-size: 34px;
     color: aliceblue;
 }
@@ -459,7 +464,7 @@
 #bicep2{
     width: 470px;
     height: 75px;
-    border: 1px solid #aaaaaa;
+    padding-top: 17px;
     font-size: 34px;
     color: aliceblue;
 }
@@ -467,7 +472,7 @@
 #bicep3{
     width: 470px;
     height: 75px;
-    border: 1px solid #aaaaaa;
+    padding-top: 17px;
     font-size: 34px;
     color: aliceblue;
 }
@@ -475,7 +480,7 @@
 #bicep4{
     width: 470px;
     height: 75px;
-    border: 1px solid #aaaaaa;
+    padding-top: 17px;
     font-size: 34px;
     color: aliceblue;
 }
@@ -483,7 +488,7 @@
 #cardio1{
     width: 470px;
     height: 75px;
-    border: 1px solid #aaaaaa;
+    padding-top: 17px;
     font-size: 34px;
     color: aliceblue;
 }
@@ -491,7 +496,7 @@
 #cardio2{
     width: 470px;
     height: 75px;
-    border: 1px solid #aaaaaa;
+    padding-top: 17px;
     font-size: 34px;
     color: aliceblue;
 }
@@ -499,7 +504,7 @@
 #cardio3{
     width: 470px;
     height: 75px;
-    border: 1px solid #aaaaaa;
+    padding-top: 17px;
     font-size: 34px;
     color: aliceblue;
 }
@@ -507,7 +512,7 @@
 #cardio4{
     width: 470px;
     height: 75px;
-    border: 1px solid #aaaaaa;
+    padding-top: 17px;
     font-size: 34px;
     color: aliceblue;
 }
