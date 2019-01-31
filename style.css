@@ -73,7 +73,7 @@
     right: 30%;
 }
 #openScreen{
-    background-image: url("http://www.wsllpaper.com/wp-content/uploads/2013/07/Mountain-Dark-Nature-HD-Wallpaper.jpg");
+    background-image: url("https://images.unsplash.com/photo-1534258936925-c58bed479fcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80&fbclid=IwAR3_RWKFSNVwS1ofZDRUYikw8_6HW-MGyuy_HqA7P2-xFgRnMFd_8A0g_Zk");
     width: 98%;
     height: 97%;
     background-position: center;
@@ -85,7 +85,7 @@
 .openTitle{
     transform: translateY(46px);
 
-    color: black;
+    color: aliceblue;
     font-family: 'Trebuchet MS';
     font-size: 88px;
     font-weight: bolder;
@@ -100,19 +100,21 @@
 }
 
 .start {
-    background-color: rgba(0, 0, 0, 0.0);
-    border: hidden;
+    
+    background-color: rgba(124, 255, 222, 0.6);
+    border-radius: 10px;
+    border: rgba(124, 255, 222, 0.5);
     cursor:pointer;
     height:  64px;
     line-height:  40px;
     text-align:  center;
     width:  300px;
-    color:  rgb(255, 0, 0);
+    color:  black   ;
     font-size: 64px;
                  }
 .start:hover  {
          color:  black;
-         background:  aliceblue;
+         background-color: rgba(124, 255, 222, 0.8);
                  }
 
 .bodyChoice {
